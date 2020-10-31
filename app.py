@@ -13,7 +13,7 @@ import numpy as np
 
 app = Flask(__name__)
 
-model =  pickle.load(open(r'C:\Users\Admin\Desktop\Insurance_data_end_to_end\model.pkl','rb'))
+model =  pickle.load(open('model.pkl','rb'))
 cols = ['age', 'bmi', 'children','sex',  'smoker', 'region']
 
 @app.route('/')
